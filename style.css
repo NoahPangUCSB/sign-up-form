@@ -85,3 +85,25 @@ body {
 .img-credit p {
     color: white;
 }
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 60px;
+    width: 40%;
+}
+
+input {
+    margin-top: 5px;
+}
