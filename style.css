@@ -106,4 +106,52 @@ body {
 
 input {
     margin-top: 5px;
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    border-style: solid;
+    height: 20px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 3px #c6c6c6;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#password:invalid + span::after{
+    content: "* Passwords do not match.";
+    color: red;
+    font-size: small;
+}
+
+.actions {
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+    padding-top: 20px;
+}
+
+.actions button {
+    border-radius: 5px;
+    border-style: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #0285e1;
+    color: white;
+}
+
+.actions button:hover {
+    background-color: #0047AB;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #0285e1;
+    font-weight: bold;
 }
